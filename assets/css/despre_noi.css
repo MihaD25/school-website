@@ -1,0 +1,230 @@
+.hero {
+  background-image: url('/assets/images/despre noi/hero_despre_noi.png');
+}
+
+#facilitati {
+  margin-top: 6.25rem;
+  scroll-margin-top: 7rem !important;
+}
+
+#profesori {
+  scroll-margin-top: 7rem !important;
+}
+
+#obiective {
+  scroll-margin-top: 7rem !important;
+  padding-top: 3.25rem;
+}
+
+/* 🔹 Secțiunea completă */
+.custom-section {
+  margin-top: 8.5rem;
+}
+
+/* 🔹 Fiecare card */
+.custom-card {
+  background: #c6c6c6;
+
+  & p {
+    font-size: 14px;
+  }
+
+  /* 🔹 Stilizare text */
+  & h3 {
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 73.25px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 5px; /* Mic spațiu sub cifră */
+  }
+
+  & .fw-bold {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+
+.custom-section h2 {
+  margin-bottom: 40px;
+}
+
+.carousel-indicators {
+  margin-bottom: -2.5rem;
+}
+
+.carousel-inner {
+  padding: 0 4rem;
+}
+
+.slide-content {
+  margin-top: -4.5rem;
+}
+
+.profesori-section {
+  margin-top: 9.375rem;
+  margin-bottom: 30px;
+}
+
+.profesor-img {
+  width: 203.44px;
+  height: 203.44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.profesor-text {
+  background-color: var(--primary-tiffany-blue);
+  width: 17rem;
+  height: 8.5rem;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-top: -1.5rem;
+}
+
+#core-principles {
+  margin-top: 9.375rem;
+  margin-bottom: 6.25rem;
+
+  background: var(--primary-tiffany-blue);
+
+  & .core-principles-tabs {
+    padding: 2.5rem 0 1.25rem;
+    width: 15.625rem;
+
+    & .nav-link {
+      & .image-container {
+        background: var(--neutral-90);
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 0.94rem;
+      }
+
+      &.active .image-container {
+        background: var(--primary-mint);
+      }
+    }
+  }
+}
+
+& .core-principles-content {
+  & .image-container {
+    background: var(--primary-mint);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.94rem;
+    margin: 0 auto 1.875rem;
+  }
+}
+
+& .tab-content .card {
+  padding: 1.56rem 1rem;
+  background: var(--primary-tiffany-blue);
+}
+
+.core-principles-tabs {
+  padding: 2.5rem 0;
+
+  & .nav {
+    width: 15.625rem;
+  }
+
+  & img {
+    width: 3.125rem;
+  }
+}
+
+#reviews {
+  scroll-margin-top: 7rem !important;
+  padding-top: 6.25rem;
+}
+
+#profesoriCarousel {
+  & .carousel-inner::after {
+    display: none;
+  }
+
+  & .carousel-item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+#imageCarousel {
+  & img {
+    padding: 0;
+    height: 18.75rem;
+    object-fit: cover;
+  }
+
+  & .left-slide {
+    color: var(--neutral-20);
+    height: 10rem;
+    padding: 0.5rem;
+    background: var(--primary-tiffany-blue);
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-section {
+    background-color: #d9d9d9;
+  }
+
+  #core-principles {
+    margin-top: 3.125rem;
+    --bs-card-border-width: 0;
+    background: transparent;
+
+    & .tab-content {
+      & > .tab-pane {
+        opacity: 1;
+      }
+
+      & .card {
+        --bs-card-border-width: 1px;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+  }
+
+  #profesoriCarousel {
+    & .carousel-item {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    & .carousel-inner {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  #imageCarousel {
+    & .left-slide,
+    & img {
+      max-width: calc(50% - 0.94rem);
+      border-radius: 1.25rem !important;
+      height: 17.2rem;
+    }
+
+    & .left-slide {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #core-principles {
+    height: 21rem;
+  }
+}

@@ -1,0 +1,88 @@
+#contact,
+#contact-form {
+  margin-top: 3.125rem;
+}
+
+#contact div[class^='col'] {
+  background-color: var(--primary-tiffany-blue);
+  width: 14.875rem;
+
+  & h6:first-of-type {
+    color: var(--neutral-10);
+  }
+
+  & h6:last-of-type {
+    color: var(--neutral-30);
+  }
+}
+
+#contact-form {
+  margin-bottom: 4.375rem;
+
+  & h5 {
+    margin-bottom: 2.625rem !important;
+    color: var(--neutral-10);
+  }
+}
+
+.bg-gray {
+  background-color: var(--neutral-90);
+}
+
+.ai-intrebari {
+  color: var(--neutral-60);
+}
+
+.school-name {
+  color: var(--neutral-40);
+  font-family: 'PT Serif', serif;
+}
+
+.border-radius-small {
+  border-radius: 0.94rem;
+}
+
+#mesaj {
+  margin-top: 2rem;
+}
+
+#conditions {
+  font-size: 1rem;
+  margin: 1.875rem 0 2.625rem;
+
+  span {
+    color: var(--blue);
+  }
+}
+
+.call-to-action {
+  margin-top: 2.625rem;
+  margin-bottom: 6.25rem;
+
+  & button {
+    padding: 0.94rem;
+    font-size: 1.75rem;
+    color: var(--white);
+    background: var(--primary-mint);
+    border-radius: 1.25rem;
+  }
+}
+
+.trimite {
+  margin-left: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .call-to-action {
+    width: fit-content;
+
+    & button {
+      padding: 1.44rem 1.25rem;
+    }
+  }
+
+  #contact,
+  #contact-form {
+    margin-top: 6.25rem;
+  }
+}

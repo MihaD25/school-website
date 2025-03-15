@@ -1,0 +1,250 @@
+.hero {
+  background-image: url('/assets/images/landing_page/hero_landing_page.png');
+}
+
+.rezultate {
+  margin-top: 8.5rem;
+
+  & h2 {
+    margin-bottom: 40px;
+  }
+
+  .custom-card {
+    padding: 1.75rem 0.75rem;
+    background: var(--primary-tiffany-blue);
+
+    & h1 {
+      margin-bottom: 1.75rem;
+      color: var(--neutral-10);
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+
+    /* 🔹 Stilizare text */
+    & h5 {
+      color: var(--neutral-10);
+      margin-bottom: 0.625rem !important;
+    }
+  }
+}
+
+.carousel-inner {
+  padding: 0 4rem;
+}
+
+.slide-content {
+  margin-top: -4.5rem;
+}
+
+#core-principles {
+  margin-top: 0;
+  background: var(--primary-tiffany-blue);
+
+  & .core-principles-tabs {
+    padding: 2.5rem 0 1.25rem;
+    width: 15.625rem;
+
+    & .nav-link {
+      & .image-container {
+        background: var(--neutral-90);
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 0.94rem;
+      }
+
+      &.active .image-container {
+        background: var(--primary-mint);
+      }
+    }
+  }
+
+  & .core-principles-content {
+    & .image-container {
+      background: var(--primary-mint);
+      width: 5rem;
+      height: 5rem;
+      border-radius: 0.94rem;
+      margin: 0 auto 1.875rem;
+    }
+  }
+
+  & .tab-content .card {
+    --bs-card-border-width: 0;
+    padding: 1.56rem 1rem;
+    background: var(--primary-tiffany-blue);
+  }
+}
+
+#reviews {
+  scroll-margin-top: 3.875rem !important;
+  margin-top: 3.125rem;
+}
+
+@media (max-width: 768px) {
+  #testimonials-carousel .card .img-wrapper {
+    height: 17em;
+  }
+
+  #core-principles {
+    height: 21rem;
+  }
+}
+
+#imageCarousel {
+  & img {
+    padding: 0;
+    height: 18.75rem;
+    object-fit: cover;
+  }
+
+  & .left-slide {
+    color: var(--neutral-20);
+    height: 10rem;
+    padding: 0.5rem;
+    background: var(--primary-tiffany-blue);
+  }
+}
+
+@media (min-width: 768px) {
+  #reviews {
+    scroll-margin-top: 7rem !important;
+    margin-top: 6.25rem;
+  }
+
+  #core-principles {
+    --bs-card-border-width: 0;
+    margin-top: 6.25rem;
+    background: transparent;
+
+    & .tab-content {
+      & > .tab-pane {
+        opacity: 1;
+      }
+
+      & .card {
+        --bs-card-border-width: 1px;
+      }
+    }
+
+    hr {
+      display: none;
+    }
+  }
+
+  .call-to-action {
+    width: fit-content;
+    margin-bottom: 6.25rem;
+
+    & a {
+      padding: 1.44rem 1.25rem;
+    }
+  }
+
+  .rezultate {
+    background: var(--primary-tiffany-blue);
+
+    & .custom-card {
+      background: var(--primary-mint);
+    }
+  }
+
+  #imageCarousel {
+    & .left-slide,
+    & img {
+      max-width: calc(50% - 0.94rem);
+      border-radius: 1.25rem !important;
+      height: 17.2rem;
+    }
+
+    & .left-slide {
+      margin-left: auto;
+    }
+  }
+}
+
+.rezultate div[class^='col'] .custom-card {
+  border-radius: 1.25rem;
+}
+
+#testimonials-carousel {
+  & .carousel-inner {
+    padding: 0 1em 0;
+    width: 100% !important;
+
+    & .card {
+      height: 100%;
+      text-align: center;
+      margin: 0 1.7em;
+      padding: 1.25rem 0.625rem;
+      background: var(--primary-tiffany-blue);
+      font-weight: 400;
+      border: none;
+
+      & .card-body {
+        padding: 0;
+        font-size: 0.83rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & h5 {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  & .carousel-item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  & .card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .card img {
+    max-height: 100%;
+  }
+
+  & .carousel-control-prev {
+    margin-left: 0;
+  }
+
+  & .carousel-control-next {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #testimonials-carousel {
+    padding: 2.5rem;
+
+    & .carousel-item {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    & .carousel-inner {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonials-carousel .carousel-inner .card {
+    height: 12.5rem;
+  }
+}

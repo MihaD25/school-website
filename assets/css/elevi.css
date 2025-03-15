@@ -1,0 +1,177 @@
+.hero {
+  background-image: url('/assets/images/elevi/hero_elevi.png');
+  background-position: left;
+}
+
+.carousel-activities {
+  & .carousel-inner {
+    padding: 0 1em 1em;
+    width: 100% !important;
+  }
+
+  & .card {
+    margin: 1em;
+    border: none;
+
+    & img {
+      height: 17.2rem;
+      border-radius: 0.94rem;
+    }
+  }
+}
+
+h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .carousel-activities {
+    & .carousel-item {
+      & .title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      margin-right: 0;
+      flex: 0 0 25%;
+      transition: transform 0.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    & .carousel-inner {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+.activity-chip {
+  padding: 0.375rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.625rem;
+
+  & img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+#evaluare,
+#orar,
+#biblioteca,
+#carousel-cluburi,
+#carousel-evenimente {
+  scroll-margin-top: 7rem !important;
+}
+
+.container-activitati {
+  margin: 6.25rem auto;
+}
+
+.custom-row {
+  background-color: var(--primary-mint-50);
+  border-radius: 1.25rem;
+  margin-bottom: 3.13rem;
+  display: flex;
+  padding: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-col {
+  font-size: 1.81rem;
+}
+
+.cta-button {
+  background-color: var(--primary-mint);
+  color: var(--neutral-90);
+  border: none;
+  padding: 0.63rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  font-weight: bold;
+}
+
+.icon {
+  padding: 0.13rem;
+  border-radius: 0.38rem;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.chip-image {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .custom-row {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  .custom-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    gap: 5px;
+  }
+
+  .custom-title {
+    font-size: 1.25rem !important;
+    color: var(--neutral-20) !important;
+    margin: 0rem;
+    max-width: 100% !important;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+#carousel-evenimente {
+  margin: 1.25rem 0 10.25rem;
+}
+
+#carousel-cluburi {
+  margin-bottom: 10.25rem;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    margin-bottom: 6.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .border-md-0 {
+    border: none !important;
+  }
+}
